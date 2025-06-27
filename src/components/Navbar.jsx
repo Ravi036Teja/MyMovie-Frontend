@@ -19,7 +19,7 @@ const Navbar = () => {
     <div className='fixed top-0 left-0 z-50 flex justify-between items-center w-full px-6  md:px-16 lg:px-32 py-5 backdrop-blur bg-black/5 '>
         <Link to='/' className='max-md:flex-1'>
         {/* <img src={assets.logo} alt="logo" className='w-36 h-auto' /> */}
-        <h2 className='text-3xl font-bold'><span className='text-indigo-600'>M</span>y Ticket</h2>
+        <h2 className='text-3xl font-bold'>Book <span className='text-indigo-500'>M</span>y Ticket</h2>
         </Link>
        
         <div className={`md:px-4 max-md:absolute max-md:top-0  max-md:left-0 max-md:font-medium
@@ -40,7 +40,7 @@ const Navbar = () => {
         <SearchIcon className='max-md:hidden w-6 h-6 cursor-pointer'/>
         {
           !user ? (
-            <button onClick={openSignIn} className='px-4 py-1 sm:px-7 sm:py2  bg-[#F84565] hover:bg-[#D63854] transition  rounded-full font-medium '>Login</button>    
+            <button onClick={openSignIn} className='px-4 py-1 sm:px-7 sm:py2  bg-indigo-600 hover:bg-[#D63854] transition  rounded-full font-medium '>Login</button>    
           ) : (
             <UserButton>
               <UserButton.MenuItems>
